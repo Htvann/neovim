@@ -34,11 +34,10 @@ require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   -- End install
 
-
   -- Lsp plugin
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/cmp-buffer'    -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp'  -- nvim-cmp source for neovim's built-in LSP
 
   use {
     'hrsh7th/nvim-cmp',
@@ -84,7 +83,7 @@ require('packer').startup(function(use)
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use 'p00f/nvim-ts-rainbow' -- rainbow bracket
+  use 'p00f/nvim-ts-rainbow'        -- rainbow bracket
   use 'axelvc/template-string.nvim' -- auto template string
 
 
@@ -178,7 +177,7 @@ require('packer').startup(function(use)
   --     }
   -- })
 
-  use 'glepnir/template.nvim'
+  -- use 'glepnir/template.nvim'
   use 'akinsho/git-conflict.nvim'
   -- NOTE: Multi cursor
   use({
@@ -191,7 +190,7 @@ require('packer').startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
   use "lukas-reineke/cmp-rg"
-  use { 'edluffy/hologram.nvim' }
+  -- use { 'edluffy/hologram.nvim' }
 
   use "jose-elias-alvarez/null-ls.nvim"
 end)

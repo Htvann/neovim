@@ -27,7 +27,8 @@ vim.fn.sign_define({
 
 require("catppuccin").setup({
   flavour = "mocha", -- latte, frappe, macchiato, mocha
-  background = { -- :h background
+  background = {
+    -- :h background
     light = "latte",
     dark = "mocha",
   },
@@ -40,7 +41,7 @@ require("catppuccin").setup({
     percentage = 1,
   },
   no_italic = false, -- Force no italic
-  no_bold = false, -- Force no bold
+  no_bold = false,   -- Force no bold
   styles = {
     comments = { "italic" },
     conditionals = { "italic" },

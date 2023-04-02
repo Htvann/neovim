@@ -1,2 +1,2 @@
-require('template').setup({
-})
+--[[ require('template').setup({
+}) ]]

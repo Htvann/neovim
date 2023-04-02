@@ -22,7 +22,7 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 require("telescope").load_extension "file_browser"
 require("telescope").setup {
     defaults = {
-        file_ignore_patterns = { "node_modules", "android", "ios", "package-lock.json", "yarn.lock", "*.png", "*.svg" },
+        file_ignore_patterns = { "node_modules","build", "android", "ios", "package-lock.json", "yarn.lock", "*.png", "*.svg" },
         mappings = {
             i = {
                 -- press ; to close popup

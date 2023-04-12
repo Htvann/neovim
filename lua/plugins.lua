@@ -28,7 +28,7 @@ require('packer').startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use { "catppuccin/nvim", as = "catppuccin" }
   use "olimorris/onedarkpro.nvim"
-  use 'sainnhe/sonokai'
+  use "sainnhe/sonokai"
   -- use 'rakr/vim-one'
   use({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
   use { "catppuccin/nvim", as = "catppuccin" }

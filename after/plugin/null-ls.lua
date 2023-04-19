@@ -15,10 +15,18 @@ local sources = {
   formatting.phpcbf,
 
   --[[ code actions ]]
-  code_actions.eslint_d,
+  code_actions.eslint_d.with({
+    condition = function(utils)
+      return utils.root_has_file(".eslintrc")
+    end,
+  }),
 
   --[[ diagnostics ]]
-  diagnostics.eslint_d,
+  diagnostics.eslint_d.with({
+    condition = function(utils)
+      return utils.root_has_file(".eslintrc")
+    end,
+  }),
 }
 
 local lsp_formatting = function(bufnr)

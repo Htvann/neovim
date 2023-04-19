@@ -38,6 +38,15 @@ local lsp_config = {
   end
 }
 
+-- Load lspconfig
+local lspconfig = require('lspconfig')
+
+-- Configure Solidity language server
+lspconfig.solargraph.setup({
+  cmd = { "solargraph", "stdio" },
+  filetypes = { "solidity" },
+  root_dir = lspconfig.util.root_pattern(".git", "package.json"),
+})
 
 require('mason-lspconfig').setup_handlers({
   function(server_name)

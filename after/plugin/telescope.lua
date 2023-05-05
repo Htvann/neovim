@@ -12,7 +12,7 @@ end
 -- keymap
 local keymap = vim.keymap.set
 keymap('n', '\'', '<cmd> Telescope live_grep<cr>')
-keymap('n', ';', '<cmd> Telescope find_files<cr>')
+keymap('n', ';;', '<cmd> Telescope find_files<cr>')
 -- keymap('n', 'ge', '<cmd> Telescope file_browser select_buffer=true<CR>')
 
 

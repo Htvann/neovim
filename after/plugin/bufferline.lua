@@ -20,7 +20,7 @@ bufferline.setup({
       bg = '#002b36'
     }, ]]
 		buffer_selected = {
-			fg = "#d93a02",
+			fg = "#54e77b",
 			-- bold = true,
 		},
 		--[[ fill = {

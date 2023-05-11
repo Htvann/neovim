@@ -25,7 +25,7 @@ require("packer").startup(function(use)
 
 	-- Color schema plugin || theme
 	-- use("folke/tokyonight.nvim")
-	use("norcalli/nvim-colorizer.lua")
+	-- use("norcalli/nvim-colorizer.lua")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("olimorris/onedarkpro.nvim")
 	-- use("sainnhe/sonokai")
@@ -168,16 +168,6 @@ require("packer").startup(function(use)
 	-- NOTE: Codefolding
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 	-- End install
-
-	-- NOTE: Chat GPt
-	-- use({
-	--     "jackMort/ChatGPT.nvim",
-	--     requires = {
-	--         "MunifTanjim/nui.nvim",
-	--         "nvim-lua/plenary.nvim",
-	--         "nvim-telescope/telescope.nvim"
-	--     }
-	-- })
 
 	-- use 'glepnir/template.nvim'
 	use("akinsho/git-conflict.nvim")

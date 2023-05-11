@@ -31,7 +31,7 @@ require("catppuccin").setup({
 		light = "latte",
 		dark = "mocha",
 	},
-	-- transparent_background = true,
+	transparent_background = true,
 	show_end_of_buffer = true, -- show the '~' characters after the end of buffers
 	term_colors = false,
 	dim_inactive = {
@@ -71,7 +71,6 @@ require("onedarkpro").setup({
 	options = {
 		cursorline = true, -- Use cursorline highlighting?
 		transparency = true, -- Use a transparent background?
-		-- highlight_inactive_windows = false, -- When the window is out of focus, change the normal background?
 	},
 })
 

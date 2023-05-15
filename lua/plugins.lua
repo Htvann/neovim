@@ -25,7 +25,7 @@ require("packer").startup(function(use)
 
 	-- Color schema plugin || theme
 	-- use("folke/tokyonight.nvim")
-	-- use("norcalli/nvim-colorizer.lua")
+	use("norcalli/nvim-colorizer.lua")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("olimorris/onedarkpro.nvim")
 	-- use("sainnhe/sonokai")

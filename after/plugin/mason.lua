@@ -4,6 +4,7 @@ require("mason-lspconfig").setup({
 		"tsserver",
 		"dockerls",
 		"docker_compose_language_service",
+		"jsonls",
 	},
 	automatic_installation = true,
 })

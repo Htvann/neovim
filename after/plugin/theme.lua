@@ -75,5 +75,5 @@ require("onedarkpro").setup({
 })
 
 -- setup must be called before loading
--- vim.cmd.colorscheme("catppuccin-mocha")
-vim.cmd.colorscheme("onedark")
+vim.cmd.colorscheme("catppuccin-mocha")
+-- vim.cmd.colorscheme("onedark")

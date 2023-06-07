@@ -5,6 +5,7 @@ require("mason-lspconfig").setup({
 		"dockerls",
 		"docker_compose_language_service",
 		"jsonls",
+		"solang",
 	},
 	automatic_installation = true,
 })

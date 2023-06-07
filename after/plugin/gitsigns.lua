@@ -55,7 +55,7 @@ require("gitsigns").setup({
 		-- Actions
 		map("n", "gu", ":Gitsigns reset_hunk<CR>")
 		map("v", "gu", ":Gitsigns reset_hunk<CR>")
-		map("n", "gu", ":Gitsigns preview_hunk<CR>")
+		map("n", "gs", ":Gitsigns preview_hunk<CR>")
 		map("n", "gb", '<cmd>lua require"gitsigns".blame_line{full=false}<cr>')
 		map("n", "g1", "<cmd>Gitsigns diffthis<CR>")
 

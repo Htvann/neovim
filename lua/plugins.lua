@@ -18,8 +18,10 @@ require("packer").startup(function(use)
 		"nvim-telescope/telescope-file-browser.nvim",
 		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
 	})
+
 	-- End install
 
+	use("manzeloth/live-server")
 	--Wakatime
 	use("wakatime/vim-wakatime")
 

@@ -40,6 +40,18 @@ local lsp_config = {
 
 -- Load lspconfig
 local lspconfig = require("lspconfig")
+local configs = require("lspconfig.configs")
+
+--solidity config
+configs.solidity = {
+	default_config = {
+		cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+		filetypes = { "solidity" },
+		root_dir = lspconfig.util.find_git_ancestor,
+		single_file_support = true,
+	},
+}
+lspconfig.solidity.setup({})
 
 require("mason-lspconfig").setup_handlers({
 	function(server_name)

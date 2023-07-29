@@ -1,3 +1,3 @@
 import { checkname } from "./";
 
-checkname();
+checkname({ value: "hothanhvan" });

@@ -35,7 +35,7 @@ return packer.startup(function(use)
 
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
-  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+  -- use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
   use("szw/vim-maximizer") -- maximizes and restores current window
 
@@ -48,6 +48,9 @@ return packer.startup(function(use)
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
+
+  --bufferline
+  use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
   -- vs-code like icons
   use("nvim-tree/nvim-web-devicons")
@@ -113,6 +116,7 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("akinsho/git-conflict.nvim") -- show line modifications on left hand side
 
   if packer_bootstrap then
     require("packer").sync()

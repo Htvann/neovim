@@ -94,6 +94,9 @@ return packer.startup(function(use)
   -- treesitter configuration
   use({
     "nvim-treesitter/nvim-treesitter",
+    requires = {
+      { "JoosepAlviste/nvim-ts-context-commentstring" },
+    },
     run = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
       ts_update()

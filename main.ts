@@ -1,0 +1,3 @@
+import { checkname } from "./";
+
+checkname();

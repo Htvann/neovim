@@ -18,4 +18,4 @@ local function next_buffer()
   vim.api.nvim_command(current_buffer .. "bw")
 end
 
-vim.keymap.set("n", "<leader>D", next_buffer, {})
+vim.keymap.set("n", "<leader>d", next_buffer, {})

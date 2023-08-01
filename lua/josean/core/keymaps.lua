@@ -1,5 +1,6 @@
 -- set leader key to space
 vim.g.mapleader = " "
+-- vim.g.material_style = "palenight"
 
 local keymap = vim.keymap -- for conciseness
 

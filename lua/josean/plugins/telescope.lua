@@ -24,6 +24,11 @@ telescope.setup({
     },
     file_ignore_patterns = { "node_modules" },
   },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    },
+  },
 })
 
 telescope.load_extension("fzf")

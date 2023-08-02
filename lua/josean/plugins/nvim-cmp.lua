@@ -21,7 +21,26 @@ require("luasnip/loaders/from_vscode").lazy_load()
 
 vim.opt.completeopt = "menu,menuone,noselect"
 
+local function border(hl_name)
+  return {
+    { "╭", hl_name },
+    { "─", hl_name },
+    { "╮", hl_name },
+    { "│", hl_name },
+    { "╯", hl_name },
+    { "─", hl_name },
+    { "╰", hl_name },
+    { "│", hl_name },
+  }
+end
+
 cmp.setup({
+  window = {
+    documentation = {
+      border = border("CmpDocBorder"),
+      winhighlight = "Normal:CmpDoc",
+    },
+  },
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
@@ -43,11 +62,39 @@ cmp.setup({
     { name = "buffer" }, -- text within current buffer
     { name = "path" }, -- file system paths
   }),
-  -- configure lspkind for vs-code like icons
   formatting = {
     format = lspkind.cmp_format({
+      mode = "symbol_text",
       maxwidth = 50,
       ellipsis_char = "...",
+      preset = "codicons",
+      symbol_map = {
+        Text = "󰉿",
+        Method = "󰆧",
+        Function = "ƒ",
+        Constructor = "⌬",
+        Field = "󰜢",
+        Variable = "𝓧",
+        Class = "󰠱",
+        Interface = "",
+        Module = "📦",
+        Property = "󰜢",
+        Unit = "()",
+        Value = "󰎠",
+        Enum = "",
+        Keyword = "󰌋",
+        Snippet = "{}",
+        Color = "󰏘",
+        File = "󰈙",
+        Reference = "⌦",
+        Folder = "",
+        EnumMember = "",
+        Constant = "𝜋",
+        Struct = "󰙅",
+        Event = "",
+        Operator = "󰆕",
+        TypeParameter = "×",
+      },
     }),
   },
 })

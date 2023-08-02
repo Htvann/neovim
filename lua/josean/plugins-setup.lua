@@ -40,7 +40,6 @@ return packer.startup(function(use)
   use({ "drewtempelmeyer/palenight.vim" })
 
   -- use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
   use("szw/vim-maximizer") -- maximizes and restores current window
 
   -- essential plugins
@@ -49,6 +48,9 @@ return packer.startup(function(use)
 
   -- commenting with gc
   use("numToStr/Comment.nvim")
+
+  --multi cursor
+  use({ "mg979/vim-visual-multi", branch = "master" })
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")

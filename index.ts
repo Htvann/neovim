@@ -2,12 +2,15 @@ interface Main {
   value: string;
 }
 
-function checkfunction() {
-  console.log("12312312");
-}
-
-export const checkname = (value: Main) => {
-  console.log("value", value.value);
+type Val = {
+  value: string;
+  fun: () => void;
 };
 
-checkfunction();
+type mm = {
+  value: number;
+};
+
+export const checkname = (value: Main | Val) => {
+  console.log("value", value.value);
+};

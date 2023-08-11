@@ -34,10 +34,12 @@ return packer.startup(function(use)
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
   --colorscheme
-  use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-  use({ "rebelot/kanagawa.nvim" })
-  use({ "marko-cerovac/material.nvim" })
-  use({ "drewtempelmeyer/palenight.vim" })
+  -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+  -- use({ "rebelot/kanagawa.nvim" })
+  -- use({ "marko-cerovac/material.nvim" })
+  -- use({ "drewtempelmeyer/palenight.vim" })
+  -- use({ "Mofiqul/dracula.nvim" })
+  use({ "catppuccin/nvim", as = "catppuccin" })
 
   -- use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
   use("szw/vim-maximizer") -- maximizes and restores current window

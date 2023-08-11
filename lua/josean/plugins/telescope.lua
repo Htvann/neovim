@@ -22,7 +22,7 @@ telescope.setup({
         [";"] = actions.close,
       },
     },
-    file_ignore_patterns = { "node_modules" },
+    file_ignore_patterns = { "node_modules", "package-lock.json", "yarn.lock" },
   },
   pickers = {
     find_files = {

@@ -6,7 +6,6 @@ type Val = {
   value: string;
   fun: () => void;
 };
-
 type mm = {
   value: number;
 };

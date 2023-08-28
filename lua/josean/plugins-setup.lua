@@ -118,6 +118,15 @@ return packer.startup(function(use)
     end,
   })
 
+  -- use(
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   require("indent_blankline").setup({
+  --     -- for example, context is off by default, use this to turn it on
+  --     show_current_context = true,
+  --     show_current_context_start = true,
+  --   })
+  -- )
+
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags

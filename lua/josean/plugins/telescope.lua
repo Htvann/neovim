@@ -24,11 +24,11 @@ telescope.setup({
     },
     file_ignore_patterns = { "node_modules", "package-lock.json", "yarn.lock" },
   },
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-    },
-  },
+  -- pickers = {
+  --   find_files = {
+  --     theme = "dropdown",
+  --   },
+  -- },
 })
 
 telescope.load_extension("fzf")

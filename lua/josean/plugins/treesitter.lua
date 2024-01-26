@@ -39,3 +39,5 @@ treesitter.setup({
     enable = true,
   },
 })
+
+-- require("nvim-treesitter.configs").setup({})

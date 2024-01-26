@@ -1,4 +1,5 @@
 -- set leader key to space
+vim.g.skip_ts_context_commentstring_module = true
 vim.g.mapleader = " "
 -- vim.g.material_style = "Oceanic"
 

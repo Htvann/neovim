@@ -12,7 +12,7 @@ vim.keymap.set("n", "L", "<Cmd>BufferLineCycleNext<CR>", {})
 vim.keymap.set("n", "H", "<Cmd>BufferLineCyclePrev<CR>", {})
 
 local function next_buffer()
-  local windows = vim.api.nvim_get_current_win()
+  -- local windows = vim.api.nvim_get_current_win()
   local current_buffer = vim.api.nvim_get_current_buf()
   require("bufferline").cycle(-1)
   vim.api.nvim_command(current_buffer .. "bw")

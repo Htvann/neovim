@@ -1,7 +1,6 @@
 interface Strategy {
   authenticate(args: any[]): boolean;
 }
-
 enum TYPE {
   twitter = "twitter",
 }

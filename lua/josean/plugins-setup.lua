@@ -40,6 +40,7 @@ return packer.startup(function(use)
   -- use({ "drewtempelmeyer/palenight.vim" })
   -- use({ "Mofiqul/dracula.nvim" })
   use({ "catppuccin/nvim", as = "catppuccin" })
+  use({ "projekt0n/github-nvim-theme" })
 
   -- use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
   use("szw/vim-maximizer") -- maximizes and restores current window

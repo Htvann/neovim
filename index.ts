@@ -3,6 +3,7 @@ interface Strategy {
 }
 enum TYPE {
   twitter = "twitter",
+  facebook = "facebook",
 }
 
 class TwitterStrategy implements Strategy {
@@ -39,5 +40,9 @@ const auth = new Authenticate(TYPE.twitter, new TwitterStrategy());
 function login(mode: TYPE, ...args: any) {
   return auth.authenticate(mode, args);
 }
+
+const handleExample = () => {
+  return 123;
+};
 
 login("twitter" as TYPE.twitter, "tw123");

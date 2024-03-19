@@ -1,6 +1,3 @@
--- vim.opt.termguicolors = true
--- vim.notify = require("notify")
--- vim.notify("This is an error message", "error")
 require("noice").setup({
   lsp = {
     -- override markdown rendering so that **cmp** and other plugins use **Treesitter**

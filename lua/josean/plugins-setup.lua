@@ -33,16 +33,11 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-  --colorscheme
-  -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-  -- use({ "rebelot/kanagawa.nvim" })
-  -- use({ "marko-cerovac/material.nvim" })
-  -- use({ "drewtempelmeyer/palenight.vim" })
-  -- use({ "Mofiqul/dracula.nvim" })
+  -- color scheme
   use({ "catppuccin/nvim", as = "catppuccin" })
   use({ "projekt0n/github-nvim-theme" })
+  use({ "craftzdog/solarized-osaka.nvim" })
 
-  -- use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
   use("szw/vim-maximizer") -- maximizes and restores current window
 
   -- essential plugins
@@ -128,15 +123,6 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
-
-  -- use(
-  --   "lukas-reineke/indent-blankline.nvim",
-  --   require("indent_blankline").setup({
-  --     -- for example, context is off by default, use this to turn it on
-  --     show_current_context = true,
-  --     show_current_context_start = true,
-  --   })
-  -- )
 
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...

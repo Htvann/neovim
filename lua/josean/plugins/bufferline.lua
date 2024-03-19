@@ -1,4 +1,5 @@
 local bufferline = require("bufferline")
+
 bufferline.setup({
   options = {
     always_show_bufferline = false,
@@ -10,6 +11,8 @@ bufferline.setup({
 
 vim.keymap.set("n", "L", "<Cmd>BufferLineCycleNext<CR>", {})
 vim.keymap.set("n", "H", "<Cmd>BufferLineCyclePrev<CR>", {})
+vim.keymap.set("n", "do", "<Cmd>BufferLineCyclePrev<CR>", {})
+vim.keymap.set("n", "<leader>bo", "<Cmd>BufferLineCloseOthers<CR>", {})
 
 local function next_buffer()
   -- local windows = vim.api.nvim_get_current_win()

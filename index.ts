@@ -45,4 +45,5 @@ const handleExample = () => {
   return 123;
 };
 
-login("twitter" as TYPE.twitter, "tw123");
+const value_login = login("twitter" as TYPE.twitter, "tw123");
+console.log("value", value_login);

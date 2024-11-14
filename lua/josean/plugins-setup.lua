@@ -35,8 +35,8 @@ return packer.startup(function(use)
 
   -- color scheme
   use({ "catppuccin/nvim", as = "catppuccin" })
-  use({ "projekt0n/github-nvim-theme" })
   use({ "craftzdog/solarized-osaka.nvim" })
+  use({ "navarasu/onedark.nvim" })
 
   use("szw/vim-maximizer") -- maximizes and restores current window
 

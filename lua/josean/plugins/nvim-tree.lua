@@ -11,29 +11,6 @@ vim.g.loaded_netrwPlugin = 1
 -- change color for arrows in tree to light blue
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
--- configure nvim-tree
--- nvimtree.setup({
---   renderer = {
---     icons = {
---       glyphs = {
---         folder = {
---           symlink = "",
---           symlink_open = "",
---           arrow_open = "",
---           arrow_closed = "",
---         },
---       },
---     },
---   },
---   actions = {
---     open_file = {
---       window_picker = {
---         enable = false,
---       },
---     },
---   },
--- })
-
 nvimtree.setup({
   disable_netrw = true,
   hijack_netrw = true,

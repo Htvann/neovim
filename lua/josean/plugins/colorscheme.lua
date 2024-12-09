@@ -1,9 +1,9 @@
 require("solarized-osaka").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
-  transparent = false, -- Enable this to disable setting the background color
+  transparent = true, -- Enable this to disable setting the background color
   -- terminal_colors =true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
-  terminal_colors = false, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
+  terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
 
   styles = {
     -- Style to be applied to different syntax groups
@@ -13,7 +13,7 @@ require("solarized-osaka").setup({
     functions = {},
     variables = {},
     -- Background styles. Can be "dark", "transparent" or "normal"
-    sidebars = "dark", -- style for sidebars, see below
+    sidebars = "transparent", -- style for sidebars, see below
     floats = "dark", -- style for floating windows
   },
 
@@ -126,4 +126,5 @@ require("onedark").setup({
 
 -- setup must be called before loading
 -- vim.cmd.colorscheme("catppuccin")
-vim.cmd.colorscheme("onedark")
+-- vim.cmd.colorscheme("onedark")
+vim.cmd.colorscheme("solarized-osaka")

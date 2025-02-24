@@ -125,6 +125,6 @@ require("onedark").setup({
 })
 
 -- setup must be called before loading
--- vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("catppuccin")
 -- vim.cmd.colorscheme("onedark")
-vim.cmd.colorscheme("solarized-osaka")
+-- vim.cmd.colorscheme("solarized-osaka")

@@ -8,7 +8,6 @@ enum TYPE {
 
 class TwitterStrategy implements Strategy {
   authenticate(args: any[]) {
-    console.log("args", args);
     const [token] = args;
     if (token !== "tw123") {
       console.error("Twitter account authentication failed!");

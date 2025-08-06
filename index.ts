@@ -7,6 +7,8 @@ enum TYPE {
   facebook = "facebook",
 }
 
+const mains: number = 123;
+
 class TwitterStrategy implements Strategy {
   authenticate(args: any[]) {
     const [token] = args;
@@ -46,8 +48,6 @@ const handleExample = () => {
 };
 
 const value_login = login("twitter" as TYPE.twitter, "tw123");
-
-const value: stringghghghhgh = 123;
 
 const returnvalue = (value: number, index: number) => {
   return value + index;

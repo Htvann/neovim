@@ -45,9 +45,8 @@ const handleExample = () => {
 };
 
 const value_login = login("twitter" as TYPE.twitter, "tw123");
-console.log("value", value_login);
 
-const value: number = 123;
+const value: stringghghghhgh = 123;
 
 const returnvalue = (value: number, index: number) => {
   return value + index;

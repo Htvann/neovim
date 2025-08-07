@@ -91,9 +91,9 @@ return {
       end,
     })
 
-    -- vim.lsp.config("tsserver", {
-    --   filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
-    -- })
+    vim.lsp.config("tsserver", {
+      filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+    })
 
     vim.lsp.config("graphql", {
       filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },

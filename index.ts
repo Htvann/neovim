@@ -7,8 +7,6 @@ enum TYPE {
   facebook = "facebook",
 }
 
-const mains: number = 123;
-
 class TwitterStrategy implements Strategy {
   authenticate(args: any[]) {
     const [token] = args;

@@ -43,3 +43,4 @@ opt.iskeyword:append("-") -- consider string-string as whole word
 vim.diagnostic.config({
   severity_sort = true,
 })
+
